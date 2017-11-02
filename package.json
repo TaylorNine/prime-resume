@@ -1,0 +1,30 @@
+{
+  "name": "prime_taylorfedt_resume",
+  "version": "1.0.0",
+  "description": "Digital version of just my resume.  Created per Prime's specifications in order for me to secure a spot in their one of their cohorts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TaylorNine/prime-resume.git"
+  },
+  "keywords": [
+    "Resume",
+    "Prime",
+    "Taylor",
+    "Fedt",
+    "UI",
+    "UX",
+    "SASS",
+    "Bootstrap",
+    "4"
+  ],
+  "author": "Taylor Fedt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TaylorNine/prime-resume/issues"
+  },
+  "homepage": "https://github.com/TaylorNine/prime-resume#readme"
+}
