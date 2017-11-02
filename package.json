@@ -26,5 +26,9 @@
   "bugs": {
     "url": "https://github.com/TaylorNine/prime-resume/issues"
   },
-  "homepage": "https://github.com/TaylorNine/prime-resume#readme"
+  "homepage": "https://github.com/TaylorNine/prime-resume#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
 }
