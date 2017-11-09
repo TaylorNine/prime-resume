@@ -1,0 +1,198 @@
+/*
+*   Main Styles for Digital Resume
+*   Author: Taylor Fedt
+*   Version: 1.0.0
+*   Visit www.taylorfedt.com to see more of my work.
+*/
+
+// Import Bootstrap SASS files first
+// In the Bootstrap.scss files I've commented out partials I don't want/need.
+@import "bootstrap/bootstrap-reboot";
+@import "bootstrap/bootstrap-grid";
+@import "bootstrap/bootstrap";
+
+// Import My Custom SASS
+@import "tf/tf-colors"; // Declare colors first, these are the most important.
+@import "tf/tf-variables"; // Used to declare my own variables and override bootstrap variables.
+@import "tf/tf-buttons";
+
+// BG Color Classes
+.bg-purple00  {background-color: $purple00;}
+.bg-purple01  {background-color: $purple01;}
+.bg-purple02  {background-color: $purple02;}
+.bg-purple03  {background-color: $purple03;}
+
+.bg-green00   {background-color: $green00;}
+.bg-green01   {background-color: $green01;}
+.bg-green02   {background-color: $green02;}
+
+.bg-red00     {background-color: $red00;}
+.bg-red01     {background-color: $red01;}
+.bg-red02     {background-color: $red02;}
+
+.bg-logo-blue {background-color: $logo-blue;}
+
+// TXT Color Classes
+.txt-purple00  {color: $purple00;}
+.txt-purple01  {color: $purple01;}
+.txt-purple02  {color: $purple02;}
+.txt-purple03  {color: $purple03;}
+
+.txt-green00   {color: $green00;}
+.txt-green01   {color: $green01;}
+.txt-green02   {color: $green02;}
+
+.txt-red00     {color: $red00;}
+.txt-red01     {color: $red01;}
+.txt-red02     {color: $red02;}
+
+.txt-logo-blue {color: $logo-blue;}
+
+body {
+  background-color: $purple00;
+}
+
+.logo-wrapper {
+  width:600px;
+  height:auto;
+  padding: 30px 0px 10px 0px;
+}
+
+.profile {
+  padding-bottom: 40px;
+}
+
+.icon-scroll-down {
+  width:30px;
+  height:30px;
+  color: $logo-blue;
+  text-align: center;
+}
+
+//
+//  Typography
+//
+
+.display-l1 {
+  @include display-light(6rem,normal,normal,$purple03);
+}
+.display-l2 {
+  @include display-light(5.5rem,normal,normal,$purple03);
+}
+.display-l3 {
+  @include display-light(4.5rem,normal,normal,$purple03);
+  text-align: center;
+}
+.display-l4 {
+  @include display-light(3.5rem,normal,normal,$purple03);
+  text-align: center;
+}
+.display-l5 {
+  @include display-light(2.5rem,normal,normal,$purple03);
+  text-align: center;
+}
+
+.display-b1 {
+  @include display-bold(6rem,normal,normal,$purple03);
+  font-weight: bold;
+}
+.display-b2 {
+  @include display-bold(5.5rem,normal,normal,$purple03);
+  font-weight: bold;
+}
+.display-b3 {
+  @include display-bold(4.5rem,normal,normal,$purple03);
+  font-weight: bold;
+}
+.display-b4 {
+  @include display-bold(2.3rem,normal,normal,$purple03);
+  font-weight: bold;
+}
+p {
+  color: $purple03;
+  font-family: 'PT Sans', sans-serif;
+  font-size: $font-size-base * 1;
+  letter-spacing: 0.03rem;
+}
+
+@include media-breakpoint-up(sm){
+p {font-size: $font-size-base * 1.4;}
+}
+//
+// Job Information
+//
+
+.job-entry {
+  & span.highlight {background-color: $purple01;}
+  & .name {font-size:2.7rem;}
+}
+.description {
+  & p {
+    font-family: "PT Sans", sans-serif;
+    font-size: $font-size-base * 1.25;
+    color: $purple03;
+
+  & a {
+    color: #ffffff;
+    transition: all 0.4s ease-in-out;
+  }
+  & a::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  & a:hover, & a:focus {
+    height: 5px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  & a:hover::after, a:focus::after {
+    height: 5px;
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  & a:active {}
+  }
+}
+
+.divider-green {
+  background-color: $green00;
+  min-height: 10px;
+  margin-top:-7px;
+}
+
+.employed {
+  font-size: 1em;
+  margin-top:.2em;
+}
+
+
+
+//
+// Utility Classes
+// Per the Bootstrap 4 documentation there are awesome
+// new ways to setup spacing classes.
+//
+
+.tp {
+  padding-top: ($spacer * 1.5);
+}
+
+.mb {
+  margin-bottom: ($spacer * 3);
+}

@@ -1,0 +1,90 @@
+//
+// TAYLOR FEDT VARIABLES
+// These variables override the default BOOTSTRAP variables.
+// This makes it easier for me to style the parts I'll be using.
+//
+
+// Declare Fonts First
+// Import Nexa Font
+@font-face {
+font-family: "Nexa-Bold";
+src:  url(../fonts/Nexa_Free_Bold-webfont.woff) format('woff'),
+      url(../fonts/Nexa_Free_Bold-webfont.woff2) format('woff2');
+}
+@font-face {
+font-family: "Nexa-Light";
+src:  url(../fonts/Nexa_Free_Light-webfont.woff) format('woff'),
+      url(../fonts/Nexa_Free_Light-webfont.woff2) format('woff2');
+}
+// Import PT Sans: Regular 400, Regular 400 Italic, 700 Bold
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700');
+
+@mixin display-light($size,$ltr-spacing,$line-height,$color) {
+  font-family:    "Nexa-Light", sans-serif;
+  font-size:      $size;
+  letter-spacing: $ltr-spacing;
+  line-height:    $line-height;
+}
+@mixin display-bold($size,$ltr-spacing,$line-height,$color) {
+  font-family:    "Nexa-Bold", sans-serif;
+  font-size:      $size;
+  letter-spacing: $ltr-spacing;
+  line-height:    $line-height;
+}
+
+
+// Bootstrap Variables That I've Overidden
+// Doing it in this variables document means I don't have to keep track in the main BS variables doc.
+
+// Body
+// Settings for the `<body>` element.
+
+$body-bg:                   $purple01 !default;
+$body-color:                $purple03 !default;
+
+// Links
+// Style anchor elements.
+
+$link-color:                $logo-blue !default;
+$link-decoration:           none !default;
+$link-hover-color:          darken($link-color, 15%) !default;
+$link-hover-decoration:     underline !default;
+
+// Fonts
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      "PT Sans",-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$font-family-monospace:       "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 3 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+$h3-font-size:                $font-size-base * 2 !default;
+$h4-font-size:                $font-size-base * 1.75 !default;
+$h5-font-size:                $font-size-base * 1.5 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        inherit !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+$display-line-height:         $headings-line-height !default;
+
+$lead-font-size:              ($font-size-base * 1.25) !default;
+$lead-font-weight:            300 !default;
+
+$small-font-size:             80% !default;
