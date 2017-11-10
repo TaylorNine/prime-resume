@@ -1,43 +1,76 @@
 
 //  TAYLOR FEDT BRAND COLORS
-//  For some reason maps aren't working so that text color and background color
-//  styles can be created with SASS script, among other things.
+//  New variable sets, hand crafted in illustrator, blue primary, blue secondary,
+// red-primary, red secondary and purples. 47 dope colors, only implement the MVP ones now. Sexy!
 
 // Brand palette variable set.
-$logo-blue:  #5FC9E7;
-$blue00:     #74d5f0;
-$blue01:     #4ac6e8;
-$blue02:     #47b7d7;
-$blue03:     #36a9c9;
 
-$purple-00:  #0b192d;
-$purple00:   hsl(216, 32%, 15%);
-$purple01:   #303f54;
-$purple02:   #D7E9FF;
-$purple03:   #ebf5fe;
+// Purple Brand Colors
 
-$green00:    #48B596;
-$green01:    #7ACCB5;
-$green02:    #8CE5C5;
+$p1: #091424;
+$p2: #1e2937;
+$p3: #28364A;
+$p4: #445c7d;
+$p5: #6a7c97;
+$p6: #bf9db1;
+$p7: #b4becb;
 
-$red00:     #ff526b;
-$red01:     #d74157;
-$red02:     #c2475a;
+// Green Brand Colors
+$g1: #093125;
+$g2: #12624b;
+$g3: #1b9370;
+$g4: #41c49e;
+$g5: #4fd0ab;
+$g6: #7bdcc0;
+$g7: #a7e7d5;
+$g8: #d3f3ea;
 
-$wine00:    #a43b59;
-$wine01:    #803047;
-$wine02:    #a65369;
-$wine03:    #cc2453;
+// Blue Primary Colors
 
-$drk-blue00:  #40afff;
-$drk-blue01:  tint(#40afff,10%);
-$drk-blue02:  shade(#40afff,10%);
+$bp1: #102C40;
+$bp2: #205880;
+$bp3: #3083BF;
+$bp4: #40AFFF;
+$bp5: #66bfff;
+$bp6: #8ccfff;
+$bp7: #b3dfff;
+$bp8: #d9efff;
 
-$lt-blue00:   shade(#54c3ff,50%);
-$lt-blue01:   #54c3ff;
-$lt-blue02:   tint(#54c3ff,10%);
+// Blue Secondary Colors
+
+$bs1: #151140;
+$bs2: #175b80;
+$bs3: #2288bf;
+$bs4: #58c4ff;
+$bs5: #81d3ff;
+$bs6: #94d9ff;
+$bs7: #abe2ff;
+$bs8: #d5f0ff;
+
+// Red Primary Colors
+
+$rp1: #330915;
+$rp2: #66122A;
+$rp3: #991b3e;
+$rp4: #cc2453; // The Brand Color!
+$rp5: #d65075;
+$rp6: #e07c98;
+$rp7: #f5d3dd;
+
+// Red Secondary Colors
+
+$rs1: #290F16;
+$rs2: #521E2D;
+$rs3: #7B2C43;
+$rs4: #A43B59;
+$rs5: #B6627A;
+$rs6: #C8899B;
+$rs7: #DBB1BD;
+$rs9: #edd8de;
 
 // Social Media Colors
+$behance:     #0057ff;
+$dribbble:    #ea4c89;
 $fb:          #3b59b6;
 $tw:          #4099ff;
 $googleplus:  #d73e33;

@@ -4759,182 +4759,92 @@ a.text-dark:focus, a.text-dark:hover { color: #1d2124 !important; }
 /* Bounce To Bottom */
 @font-face { font-family: "Nexa-Bold"; src: url(../fonts/Nexa_Free_Bold-webfont.woff) format("woff"), url(../fonts/Nexa_Free_Bold-webfont.woff2) format("woff2"); }
 @font-face { font-family: "Nexa-Light"; src: url(../fonts/Nexa_Free_Light-webfont.woff) format("woff"), url(../fonts/Nexa_Free_Light-webfont.woff2) format("woff2"); }
-/* line 32, ../sass/main.scss */
-.bg-logo-blue { background-color: #5FC9E7; }
-
-/* line 33, ../sass/main.scss */
-.bg-blue00 { background-color: #74d5f0; }
-
-/* line 34, ../sass/main.scss */
-.txt-blue00 { color: #0f6f89; }
-
-/* line 35, ../sass/main.scss */
-.bg-blue01 { background-color: #4ac6e8; }
-
-/* line 36, ../sass/main.scss */
-.bg-blue02 { background-color: #47b7d7; }
-
 /* line 37, ../sass/main.scss */
-.bg-blue03 { background-color: #36a9c9; }
-
-/* line 39, ../sass/main.scss */
-.bg-purple-00 { background-color: #0b192d; }
-
-/* line 40, ../sass/main.scss */
-.bg-purple00 { background-color: #1a2432; }
-
-/* line 41, ../sass/main.scss */
-.bg-purple01 { background-color: #303f54; }
+body { font-family: "Roboto", sans-serif; background-color: #091424; }
 
 /* line 42, ../sass/main.scss */
-.bg-purple02 { background-color: #D7E9FF; }
-
-/* line 43, ../sass/main.scss */
-.bg-purple03 { background-color: #ebf5fe; }
-
-/* line 45, ../sass/main.scss */
-.bg-green00 { background-color: #48B596; }
-
-/* line 46, ../sass/main.scss */
-.bg-green01 { background-color: #7ACCB5; }
-
-/* line 47, ../sass/main.scss */
-.bg-green02 { background-color: #8CE5C5; }
-
-/* line 49, ../sass/main.scss */
-.bg-red00 { background-color: #ff526b; }
-
-/* line 50, ../sass/main.scss */
-.bg-red01 { background-color: #d74157; }
-
-/* line 51, ../sass/main.scss */
-.bg-red02 { background-color: #c2475a; }
+.purple-gradient { background: -moz-linear-gradient(9.38% -15% -45deg, #28364a 0%, #091424 100%); background: -webkit-linear-gradient(-45deg, #28364a 0%, #091424 100%); background: -webkit-gradient(linear, 9.38% -15%, 90.63% 115%, color-stop(0, #28364a), color-stop(1, #091424)); background: -o-linear-gradient(-45deg, #28364a 0%, #091424 100%); background: -ms-linear-gradient(-45deg, #28364a 0%, #091424 100%); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#28364A', endColorstr='#091424' ,GradientType=0)"; background: linear-gradient(135deg, #28364a 0%, #091424 100%); filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#28364A',endColorstr='#091424' , GradientType=1); }
 
 /* line 54, ../sass/main.scss */
-.txt-purple00 { color: #1a2432; }
-
-/* line 55, ../sass/main.scss */
-.txt-purple01 { color: #303f54; }
-
-/* line 56, ../sass/main.scss */
-.txt-purple02 { color: #D7E9FF; }
-
-/* line 57, ../sass/main.scss */
-.txt-purple03 { color: #ebf5fe; }
-
-/* line 59, ../sass/main.scss */
-.txt-green00 { color: #48B596; }
-
-/* line 60, ../sass/main.scss */
-.txt-green01 { color: #7ACCB5; }
-
-/* line 61, ../sass/main.scss */
-.txt-green02 { color: #8CE5C5; }
-
-/* line 63, ../sass/main.scss */
-.txt-red00 { color: #ff526b; }
-
-/* line 64, ../sass/main.scss */
-.txt-red01 { color: #d74157; }
-
-/* line 65, ../sass/main.scss */
-.txt-red02 { color: #c2475a; }
-
-/* line 67, ../sass/main.scss */
-.txt-logo-blue { color: #5FC9E7; }
-
-/* line 69, ../sass/main.scss */
-body { font-family: "Roboto", sans-serif; background-color: #53b7ff; }
-
-/* line 75, ../sass/main.scss */
-.bg-gradient-purple { background: -moz-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* ff3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0c1b30), color-stop(100%, #303f54)); /* safari4+,chrome */ background: -webkit-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* safari5.1+,chrome10+ */ background: -o-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* opera 11.10+ */ background: -ms-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* ie10+ */ background: linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* w3c */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303f54', endColorstr='#0c1b30',GradientType=1 ); /* ie6-9 */ }
-
-/* line 85, ../sass/main.scss */
-.vertical-progress-bar { background-color: #36a9c9; height: 100%; width: 4px; display: flex; margin-top: 1px; position: absolute; left: 2; z-index: 1000; }
-
-/* line 96, ../sass/main.scss */
 .logo-container { position: sticky; }
 
-/* line 100, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .logo-wrapper { width: 800px; height: 150px; padding: 30px 0px 10px 0px; }
 
-/* line 106, ../sass/main.scss */
-.logo-wrapper-shrink { width: 100px; height: 50px; padding: 20px 0px 10px 0px; }
-
-/* line 112, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .profile { padding: 60px 0 40px 0; }
 
-/* line 116, ../sass/main.scss */
-.icon-scroll-down { width: 30px; height: 30px; color: #5FC9E7; text-align: center; }
+/* line 68, ../sass/main.scss */
+.icon-scroll-down { width: 30px; height: 30px; color: #40AFFF; text-align: center; }
 
-/* line 127, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 .display-l1 { font-family: "Nexa-Light", sans-serif; font-size: 6rem; letter-spacing: normal; line-height: normal; }
 
-/* line 130, ../sass/main.scss */
+/* line 82, ../sass/main.scss */
 .display-l2 { font-family: "Nexa-Light", sans-serif; font-size: 5.5rem; letter-spacing: normal; line-height: normal; }
 
-/* line 133, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .display-l3 { font-family: "Nexa-Light", sans-serif; font-size: 4.5rem; letter-spacing: normal; line-height: normal; text-align: center; }
 
-/* line 137, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 .display-l4 { font-family: "Nexa-Light", sans-serif; font-size: 3rem; letter-spacing: normal; line-height: normal; text-align: center; }
 
-/* line 141, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .display-l5 { font-family: "Nexa-Light", sans-serif; font-size: 2.5rem; letter-spacing: normal; line-height: normal; text-align: center; }
 
-/* line 146, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 .display-b1 { font-family: "Nexa-Bold", sans-serif; font-size: 6rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 150, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 .display-b2 { font-family: "Nexa-Bold", sans-serif; font-size: 5.5rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 154, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .display-b3 { font-family: "Nexa-Bold", sans-serif; font-size: 4.5rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 158, ../sass/main.scss */
+/* line 110, ../sass/main.scss */
 .display-b3-5 { font-family: "Nexa-Bold", sans-serif; font-size: 3.5rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 162, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .display-b4 { font-family: "Nexa-Bold", sans-serif; font-size: 2.3rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 167, ../sass/main.scss */
-p { color: #0c5c72; font-family: 'Roboto', sans-serif; font-size: 1.3rem; font-weight: 400; letter-spacing: 0.03rem; }
+/* line 119, ../sass/main.scss */
+p { color: bp0; font-family: 'Roboto', sans-serif; font-size: 1.3rem; font-weight: 400; letter-spacing: 0.03rem; }
 
-/* line 176, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 i { font-style: italic; }
 
-@media (min-width: 576px) { /* line 179, ../sass/main.scss */
+@media (min-width: 576px) { /* line 131, ../sass/main.scss */
   p { font-size: 1.4rem; } }
-/* line 185, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 .job-entry { min-height: 300px; }
-/* line 187, ../sass/main.scss */
-.job-entry span.highlight { background-color: #303f54; }
-/* line 188, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
+.job-entry span.highlight { background-color: #091424; }
+/* line 142, ../sass/main.scss */
 .job-entry .name { font-size: 2.9rem; }
 
-/* line 191, ../sass/main.scss */
-p { font-family: "Roboto", sans-serif; font-size: 1.25rem; color: #ebf5fe; }
+/* line 145, ../sass/main.scss */
+p { font-family: "Roboto", sans-serif; font-size: 1.25rem; color: #28364A; }
 
-/* line 197, ../sass/main.scss */
-.divider-green { background-color: #48B596; min-height: 10px; margin-top: -10px; }
+/* line 151, ../sass/main.scss */
+.divider-green { background-color: #093125; min-height: 10px; margin-top: -10px; }
 
-/* line 202, ../sass/main.scss */
-.divider-red { background-color: #c2475a; min-height: 10px; margin-top: -10px; }
+/* line 156, ../sass/main.scss */
+.divider-red { background-color: #66122A; min-height: 10px; margin-top: -10px; }
 
-/* line 207, ../sass/main.scss */
-.divider-drk-blue { background-color: #40afff; min-height: 10px; margin-top: -10px; }
+/* line 161, ../sass/main.scss */
+.divider-drk-blue { background-color: #102C40; min-height: 10px; margin-top: -10px; }
 
-/* line 212, ../sass/main.scss */
-.divider-lt-blue { background-color: #2a6280; min-height: 10px; margin-top: -10px; }
+/* line 166, ../sass/main.scss */
+.divider-lt-blue { background-color: #151140; min-height: 10px; margin-top: -10px; }
 
-/* line 217, ../sass/main.scss */
-.employed { color: #ebf5fe; font-family: "Roboto", sans-serif; font-size: 1rem; font-style: normal; font-weight: 300; letter-spacing: 0.08rem; margin-top: 0.2rem; }
+/* line 171, ../sass/main.scss */
+.employed { color: #28364A; font-family: "Roboto", sans-serif; font-size: 1rem; font-style: normal; font-weight: 300; letter-spacing: 0.08rem; margin-top: 0.2rem; }
 
-/* line 229, ../sass/main.scss */
+/* line 183, ../sass/main.scss */
 .tp { padding-top: 1.5rem; }
 
-/* line 233, ../sass/main.scss */
+/* line 187, ../sass/main.scss */
 .mb { margin-bottom: 3rem; }
 
-/* line 237, ../sass/main.scss */
+/* line 191, ../sass/main.scss */
 .jb { margin-bottom: 4rem; }
