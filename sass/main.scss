@@ -10,13 +10,33 @@
 @import "bootstrap/bootstrap-reboot";
 @import "bootstrap/bootstrap-grid";
 @import "bootstrap/bootstrap";
-
+// Animate SASS Import
+@import "animate/options";
+@import "animate/mixins";
+@import "animate/hacks";
+@import "animate/effects/background-transitions/bounce-to-bottom";
 // Import My Custom SASS
 @import "tf/tf-colors"; // Declare colors first, these are the most important.
 @import "tf/tf-variables"; // Used to declare my own variables and override bootstrap variables.
 @import "tf/tf-buttons";
 
-// BG Color Classes
+// BOX SHADOW MIXIN
+@mixin box-shadow-std() {
+  -webkit-box-shadow: 0px 4px 2px 0px rgba(0,0,0,0.16);
+  -moz-box-shadow: 0px 4px 2px 0px rgba(0,0,0,0.16);
+  box-shadow: 0px 4px 2px 0px rgba(0,0,0,0.16);
+}
+
+
+// BG Color/Text Color Combos
+.bg-logo-blue {background-color: $logo-blue;}
+.bg-blue00    {background-color: $blue00;}
+.txt-blue00   {color: darken($blue00,40%);}
+.bg-blue01    {background-color: $blue01;}
+.bg-blue02    {background-color: $blue02;}
+.bg-blue03    {background-color: $blue03;}
+
+.bg-purple-00 {background-color:$purple-00;}
 .bg-purple00  {background-color: $purple00;}
 .bg-purple01  {background-color: $purple01;}
 .bg-purple02  {background-color: $purple02;}
@@ -29,8 +49,6 @@
 .bg-red00     {background-color: $red00;}
 .bg-red01     {background-color: $red01;}
 .bg-red02     {background-color: $red02;}
-
-.bg-logo-blue {background-color: $logo-blue;}
 
 // TXT Color Classes
 .txt-purple00  {color: $purple00;}
@@ -49,17 +67,50 @@
 .txt-logo-blue {color: $logo-blue;}
 
 body {
-  background-color: $purple00;
+  font-family: "Roboto", sans-serif;
+  //background-color: $purple00;
+  background-color: $drk-blue01;
+}
+
+.bg-gradient-purple {
+    background: -moz-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0c1b30), color-stop(100%, #303f54)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* ie10+ */
+    background: linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303f54', endColorstr='#0c1b30',GradientType=1 ); /* ie6-9 */
+}
+
+.vertical-progress-bar {
+  background-color: $blue03;
+  height:100%;
+  width:4px;
+  display:flex;
+  margin-top: 1px;
+  position:absolute;
+  left:2;
+  z-index:1000;
+}
+
+.logo-container {
+  position:sticky;
 }
 
 .logo-wrapper {
-  width:600px;
-  height:auto;
+  width:800px;
+  height: 150px;
   padding: 30px 0px 10px 0px;
 }
 
+.logo-wrapper-shrink {
+  width:100px;
+  height: 50px;
+  padding: 20px 0px 10px 0px;
+}
+
 .profile {
-  padding-bottom: 40px;
+  padding: 60px 0 40px 0;
 }
 
 .icon-scroll-down {
@@ -84,7 +135,7 @@ body {
   text-align: center;
 }
 .display-l4 {
-  @include display-light(3.5rem,normal,normal,$purple03);
+  @include display-light(3rem,normal,normal,$purple03);
   text-align: center;
 }
 .display-l5 {
@@ -104,16 +155,25 @@ body {
   @include display-bold(4.5rem,normal,normal,$purple03);
   font-weight: bold;
 }
+.display-b3-5 {
+  @include display-bold(3.5rem,normal,normal,inherit);
+  font-weight: bold;
+}
 .display-b4 {
   @include display-bold(2.3rem,normal,normal,$purple03);
   font-weight: bold;
 }
+
 p {
-  color: $purple03;
-  font-family: 'PT Sans', sans-serif;
-  font-size: $font-size-base * 1;
+  color: darken($blue00,45%);
+  font-family: 'Roboto', sans-serif;
+  font-size: $font-size-base * 1.3;
+  font-weight: 400;
   letter-spacing: 0.03rem;
+
 }
+
+i {font-style:italic;}
 
 @include media-breakpoint-up(sm){
 p {font-size: $font-size-base * 1.4;}
@@ -123,65 +183,42 @@ p {font-size: $font-size-base * 1.4;}
 //
 
 .job-entry {
+  min-height: 300px;
   & span.highlight {background-color: $purple01;}
-  & .name {font-size:2.7rem;}
+  & .name {font-size:2.9rem;}
 }
-.description {
-  & p {
-    font-family: "PT Sans", sans-serif;
+
+  p {
+    font-family: "Roboto", sans-serif;
     font-size: $font-size-base * 1.25;
     color: $purple03;
-
-  & a {
-    color: #ffffff;
-    transition: all 0.4s ease-in-out;
-  }
-  & a::after {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background: #fff;
-    content: '';
-    opacity: 0;
-    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-    transition: height 0.3s, opacity 0.3s, transform 0.3s;
-    -webkit-transform: translateY(-10px);
-    -moz-transform: translateY(-10px);
-    transform: translateY(-10px);
-  }
-  & a:hover, & a:focus {
-    height: 5px;
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  & a:hover::after, a:focus::after {
-    height: 5px;
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  & a:active {}
-  }
 }
 
 .divider-green {
   background-color: $green00;
   min-height: 10px;
-  margin-top:-7px;
+  margin-top:-10px;
 }
-
+.divider-red {
+  background-color: $red02;
+  min-height: 10px;
+  margin-top:-10px;
+}
+.divider-drk-blue {
+  background-color: $drk-blue00;
+  min-height: 10px;
+  margin-top:-10px;
+}
+.divider-lt-blue {
+  background-color: $lt-blue00;
+  min-height: 10px;
+  margin-top:-10px;
+}
 .employed {
-  font-size: 1em;
-  margin-top:.2em;
+  @include roboto-props($purple03,1rem,normal,300);
+  letter-spacing: 0.08rem;
+  margin-top: 0.2rem;
 }
-
-
 
 //
 // Utility Classes
@@ -195,4 +232,8 @@ p {font-size: $font-size-base * 1.4;}
 
 .mb {
   margin-bottom: ($spacer * 3);
+}
+
+.jb {
+  margin-bottom: ($spacer * 4);
 }

@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,900");
 /* line 21, ../sass/bootstrap/_reboot.scss */
 *, *::before, *::after { box-sizing: border-box; }
 
@@ -4756,142 +4756,185 @@ a.text-dark:focus, a.text-dark:hover { color: #1d2124 !important; }
 /* line 9, ../sass/bootstrap/utilities/_visibility.scss */
 .invisible { visibility: hidden !important; }
 
+/* Bounce To Bottom */
 @font-face { font-family: "Nexa-Bold"; src: url(../fonts/Nexa_Free_Bold-webfont.woff) format("woff"), url(../fonts/Nexa_Free_Bold-webfont.woff2) format("woff2"); }
 @font-face { font-family: "Nexa-Light"; src: url(../fonts/Nexa_Free_Light-webfont.woff) format("woff"), url(../fonts/Nexa_Free_Light-webfont.woff2) format("woff2"); }
-/* line 20, ../sass/main.scss */
-.bg-purple00 { background-color: #1A2433; }
-
-/* line 21, ../sass/main.scss */
-.bg-purple01 { background-color: #36404F; }
-
-/* line 22, ../sass/main.scss */
-.bg-purple02 { background-color: #D7E9FF; }
-
-/* line 23, ../sass/main.scss */
-.bg-purple03 { background-color: #f0f7fe; }
-
-/* line 25, ../sass/main.scss */
-.bg-green00 { background-color: #48B596; }
-
-/* line 26, ../sass/main.scss */
-.bg-green01 { background-color: #7ACCB5; }
-
-/* line 27, ../sass/main.scss */
-.bg-green02 { background-color: #8CE5C5; }
-
-/* line 29, ../sass/main.scss */
-.bg-red00 { background-color: #662424; }
-
-/* line 30, ../sass/main.scss */
-.bg-red01 { background-color: #9B3735; }
-
-/* line 31, ../sass/main.scss */
-.bg-red02 { background-color: #E45F56; }
-
-/* line 33, ../sass/main.scss */
+/* line 32, ../sass/main.scss */
 .bg-logo-blue { background-color: #5FC9E7; }
 
+/* line 33, ../sass/main.scss */
+.bg-blue00 { background-color: #74d5f0; }
+
+/* line 34, ../sass/main.scss */
+.txt-blue00 { color: #0f6f89; }
+
+/* line 35, ../sass/main.scss */
+.bg-blue01 { background-color: #4ac6e8; }
+
 /* line 36, ../sass/main.scss */
-.txt-purple00 { color: #1A2433; }
+.bg-blue02 { background-color: #47b7d7; }
 
 /* line 37, ../sass/main.scss */
-.txt-purple01 { color: #36404F; }
-
-/* line 38, ../sass/main.scss */
-.txt-purple02 { color: #D7E9FF; }
+.bg-blue03 { background-color: #36a9c9; }
 
 /* line 39, ../sass/main.scss */
-.txt-purple03 { color: #f0f7fe; }
+.bg-purple-00 { background-color: #0b192d; }
+
+/* line 40, ../sass/main.scss */
+.bg-purple00 { background-color: #1a2432; }
 
 /* line 41, ../sass/main.scss */
-.txt-green00 { color: #48B596; }
+.bg-purple01 { background-color: #303f54; }
 
 /* line 42, ../sass/main.scss */
-.txt-green01 { color: #7ACCB5; }
+.bg-purple02 { background-color: #D7E9FF; }
 
 /* line 43, ../sass/main.scss */
-.txt-green02 { color: #8CE5C5; }
+.bg-purple03 { background-color: #ebf5fe; }
 
 /* line 45, ../sass/main.scss */
-.txt-red00 { color: #662424; }
+.bg-green00 { background-color: #48B596; }
 
 /* line 46, ../sass/main.scss */
-.txt-red01 { color: #9B3735; }
+.bg-green01 { background-color: #7ACCB5; }
 
 /* line 47, ../sass/main.scss */
-.txt-red02 { color: #E45F56; }
+.bg-green02 { background-color: #8CE5C5; }
 
 /* line 49, ../sass/main.scss */
-.txt-logo-blue { color: #5FC9E7; }
+.bg-red00 { background-color: #ff526b; }
+
+/* line 50, ../sass/main.scss */
+.bg-red01 { background-color: #d74157; }
 
 /* line 51, ../sass/main.scss */
-body { background-color: #1A2433; }
+.bg-red02 { background-color: #c2475a; }
+
+/* line 54, ../sass/main.scss */
+.txt-purple00 { color: #1a2432; }
 
 /* line 55, ../sass/main.scss */
-.logo-wrapper { width: 600px; height: auto; padding: 30px 0px 10px 0px; }
+.txt-purple01 { color: #303f54; }
+
+/* line 56, ../sass/main.scss */
+.txt-purple02 { color: #D7E9FF; }
+
+/* line 57, ../sass/main.scss */
+.txt-purple03 { color: #ebf5fe; }
+
+/* line 59, ../sass/main.scss */
+.txt-green00 { color: #48B596; }
+
+/* line 60, ../sass/main.scss */
+.txt-green01 { color: #7ACCB5; }
 
 /* line 61, ../sass/main.scss */
-.profile { padding-bottom: 40px; }
+.txt-green02 { color: #8CE5C5; }
+
+/* line 63, ../sass/main.scss */
+.txt-red00 { color: #ff526b; }
+
+/* line 64, ../sass/main.scss */
+.txt-red01 { color: #d74157; }
 
 /* line 65, ../sass/main.scss */
+.txt-red02 { color: #c2475a; }
+
+/* line 67, ../sass/main.scss */
+.txt-logo-blue { color: #5FC9E7; }
+
+/* line 69, ../sass/main.scss */
+body { font-family: "Roboto", sans-serif; background-color: #53b7ff; }
+
+/* line 75, ../sass/main.scss */
+.bg-gradient-purple { background: -moz-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* ff3.6+ */ background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #0c1b30), color-stop(100%, #303f54)); /* safari4+,chrome */ background: -webkit-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* safari5.1+,chrome10+ */ background: -o-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* opera 11.10+ */ background: -ms-linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* ie10+ */ background: linear-gradient(45deg, #0c1b30 0%, #303f54 100%); /* w3c */ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303f54', endColorstr='#0c1b30',GradientType=1 ); /* ie6-9 */ }
+
+/* line 85, ../sass/main.scss */
+.vertical-progress-bar { background-color: #36a9c9; height: 100%; width: 4px; display: flex; margin-top: 1px; position: absolute; left: 2; z-index: 1000; }
+
+/* line 96, ../sass/main.scss */
+.logo-container { position: sticky; }
+
+/* line 100, ../sass/main.scss */
+.logo-wrapper { width: 800px; height: 150px; padding: 30px 0px 10px 0px; }
+
+/* line 106, ../sass/main.scss */
+.logo-wrapper-shrink { width: 100px; height: 50px; padding: 20px 0px 10px 0px; }
+
+/* line 112, ../sass/main.scss */
+.profile { padding: 60px 0 40px 0; }
+
+/* line 116, ../sass/main.scss */
 .icon-scroll-down { width: 30px; height: 30px; color: #5FC9E7; text-align: center; }
 
-/* line 76, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .display-l1 { font-family: "Nexa-Light", sans-serif; font-size: 6rem; letter-spacing: normal; line-height: normal; }
 
-/* line 79, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 .display-l2 { font-family: "Nexa-Light", sans-serif; font-size: 5.5rem; letter-spacing: normal; line-height: normal; }
 
-/* line 82, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 .display-l3 { font-family: "Nexa-Light", sans-serif; font-size: 4.5rem; letter-spacing: normal; line-height: normal; text-align: center; }
 
-/* line 86, ../sass/main.scss */
-.display-l4 { font-family: "Nexa-Light", sans-serif; font-size: 3.5rem; letter-spacing: normal; line-height: normal; text-align: center; }
+/* line 137, ../sass/main.scss */
+.display-l4 { font-family: "Nexa-Light", sans-serif; font-size: 3rem; letter-spacing: normal; line-height: normal; text-align: center; }
 
-/* line 90, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 .display-l5 { font-family: "Nexa-Light", sans-serif; font-size: 2.5rem; letter-spacing: normal; line-height: normal; text-align: center; }
 
-/* line 95, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 .display-b1 { font-family: "Nexa-Bold", sans-serif; font-size: 6rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 99, ../sass/main.scss */
+/* line 150, ../sass/main.scss */
 .display-b2 { font-family: "Nexa-Bold", sans-serif; font-size: 5.5rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 103, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 .display-b3 { font-family: "Nexa-Bold", sans-serif; font-size: 4.5rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 107, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
+.display-b3-5 { font-family: "Nexa-Bold", sans-serif; font-size: 3.5rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
+
+/* line 162, ../sass/main.scss */
 .display-b4 { font-family: "Nexa-Bold", sans-serif; font-size: 2.3rem; letter-spacing: normal; line-height: normal; font-weight: bold; }
 
-/* line 111, ../sass/main.scss */
-p { color: #f0f7fe; font-family: 'PT Sans', sans-serif; font-size: 1rem; letter-spacing: 0.03rem; }
+/* line 167, ../sass/main.scss */
+p { color: #0c5c72; font-family: 'Roboto', sans-serif; font-size: 1.3rem; font-weight: 400; letter-spacing: 0.03rem; }
 
-@media (min-width: 576px) { /* line 119, ../sass/main.scss */
+/* line 176, ../sass/main.scss */
+i { font-style: italic; }
+
+@media (min-width: 576px) { /* line 179, ../sass/main.scss */
   p { font-size: 1.4rem; } }
-/* line 126, ../sass/main.scss */
-.job-entry span.highlight { background-color: #36404F; }
-/* line 127, ../sass/main.scss */
-.job-entry .name { font-size: 2.7rem; }
+/* line 185, ../sass/main.scss */
+.job-entry { min-height: 300px; }
+/* line 187, ../sass/main.scss */
+.job-entry span.highlight { background-color: #303f54; }
+/* line 188, ../sass/main.scss */
+.job-entry .name { font-size: 2.9rem; }
 
-/* line 130, ../sass/main.scss */
-.description p { font-family: "PT Sans", sans-serif; font-size: 1.25rem; color: #f0f7fe; }
-/* line 135, ../sass/main.scss */
-.description p a { color: #ffffff; transition: all 0.4s ease-in-out; }
-/* line 139, ../sass/main.scss */
-.description p a::after { position: absolute; top: 100%; left: 0; width: 100%; height: 1px; background: #fff; content: ''; opacity: 0; -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s; -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s; transition: height 0.3s, opacity 0.3s, transform 0.3s; -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); transform: translateY(-10px); }
-/* line 155, ../sass/main.scss */
-.description p a:hover, .description p a:focus { height: 5px; opacity: 1; -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px); }
-/* line 162, ../sass/main.scss */
-.description p a:hover::after, .description p a:focus::after { height: 5px; opacity: 1; -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px); }
+/* line 191, ../sass/main.scss */
+p { font-family: "Roboto", sans-serif; font-size: 1.25rem; color: #ebf5fe; }
 
-/* line 173, ../sass/main.scss */
-.divider-green { background-color: #48B596; min-height: 10px; margin-top: -7px; }
+/* line 197, ../sass/main.scss */
+.divider-green { background-color: #48B596; min-height: 10px; margin-top: -10px; }
 
-/* line 179, ../sass/main.scss */
-.employed { font-size: 1em; margin-top: .2em; }
+/* line 202, ../sass/main.scss */
+.divider-red { background-color: #c2475a; min-height: 10px; margin-top: -10px; }
 
-/* line 192, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
+.divider-drk-blue { background-color: #40afff; min-height: 10px; margin-top: -10px; }
+
+/* line 212, ../sass/main.scss */
+.divider-lt-blue { background-color: #2a6280; min-height: 10px; margin-top: -10px; }
+
+/* line 217, ../sass/main.scss */
+.employed { color: #ebf5fe; font-family: "Roboto", sans-serif; font-size: 1rem; font-style: normal; font-weight: 300; letter-spacing: 0.08rem; margin-top: 0.2rem; }
+
+/* line 229, ../sass/main.scss */
 .tp { padding-top: 1.5rem; }
 
-/* line 196, ../sass/main.scss */
+/* line 233, ../sass/main.scss */
 .mb { margin-bottom: 3rem; }
+
+/* line 237, ../sass/main.scss */
+.jb { margin-bottom: 4rem; }
