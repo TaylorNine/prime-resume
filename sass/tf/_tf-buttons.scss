@@ -8,19 +8,37 @@
 }
 
 .btnprimary {
+    width: 100px;
+    height: 30px;
     background: #CC2453;
+    border: none;
+    color: #f5d3dd;
+    text-align: center;
+    text-transform: uppercase;
     border-radius: 27px;
     -moz-border-radius: 27px;
     -webkit-border-radius: 27px;
     tab-focus: none;
-    &:hover {
+    &:hover,
+    &:focus {
+        background-color: transparent;
+        color: #CC2453;
         border-style: Solid;
         border-color: #CC2453;
         border-width: 5px;
-        border-radius: 28px;
-        -moz-border-radius: 28px;
-        -webkit-border-radius: 28px;
+        border-radius: 27px;
+        -moz-border-radius: 27px;
+        -webkit-border-radius: 27px;
         outline: none;
+        tab-focus: none;
+    }
+    &:active,
+    &:visited {
+        background: #CC2453;
+        color: #f5d3dd;
+        border-radius: 27px;
+        -moz-border-radius: 27px;
+        -webkit-border-radius: 27px;
         tab-focus: none;
     }
 }

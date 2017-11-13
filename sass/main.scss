@@ -62,6 +62,12 @@ body {
     padding: 30px 0px 10px 0px;
 }
 
+nav {
+    & a {
+        @include roboto-props($rp4, 1.3rem, normal, 400);
+    }
+}
+
 .profile {
     color: $p3;
     background-color: $p1;
