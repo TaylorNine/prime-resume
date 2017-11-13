@@ -98,6 +98,9 @@ $link-decoration: none;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: none;
 a {
+    color: $link-color;
+    margin-bottom: 6px;
+    font-weight: 400;
     text-decoration: none;
     &:hover {
         text-decoration: none;
@@ -269,6 +272,6 @@ ul.duties {
     margin-bottom: ($spacer * 4);
 }
 
-jb {
-    margin-bottom: ($spacer * 4);
+.jt {
+    margin-top: ($spacer * 4);
 }

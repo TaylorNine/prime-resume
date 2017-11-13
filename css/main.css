@@ -13678,6 +13678,9 @@ body {
   background-color: #41c49e; }
 
 a {
+  color: #cc2453;
+  margin-bottom: 6px;
+  font-weight: 400;
   text-decoration: none; }
   a:hover {
     text-decoration: none; }
@@ -13843,7 +13846,7 @@ ul.duties {
 .jb {
   margin-bottom: 4rem; }
 
-jb {
-  margin-bottom: 4rem; }
+.jt {
+  margin-top: 4rem; }
 
 /*# sourceMappingURL=main.css.map */
