@@ -7866,17 +7866,20 @@ ul.duties li { padding-left: 0rem; }
 /* line 254, ../sass/main.scss */
 ul.duties li i { margin-right: 6px; }
 
-/* line 265, ../sass/main.scss */
+/* line 263, ../sass/main.scss */
+.bg-purple3 { background-color: #091424; height: 30px; margin-top: 60px; }
+
+/* line 274, ../sass/main.scss */
 .tp { padding-top: 1.5rem; }
 
-/* line 269, ../sass/main.scss */
+/* line 278, ../sass/main.scss */
 .mt-1 { margin-top: 1.5rem; }
 
-/* line 273, ../sass/main.scss */
+/* line 282, ../sass/main.scss */
 .mb { margin-bottom: 3rem; }
 
-/* line 277, ../sass/main.scss */
+/* line 286, ../sass/main.scss */
 .jb { margin-bottom: 4rem; }
 
-/* line 281, ../sass/main.scss */
+/* line 290, ../sass/main.scss */
 .jt { margin-top: 4rem; }
