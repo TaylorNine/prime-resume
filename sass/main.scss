@@ -10,15 +10,14 @@
 @import "bootstrap/bootstrap-reboot";
 @import "bootstrap/bootstrap-grid";
 @import "bootstrap/bootstrap";
-// Animate SASS Import
-@import "animate/options";
-@import "animate/mixins";
-@import "animate/hacks";
-@import "animate/effects/background-transitions/bounce-to-bottom";
+// FontAwesome SASS Import
+@import "font-awesome/font-awesome";
 // Import My Custom SASS
 @import "tf/tf-colors"; // Declare colors first, these are the most important.
 @import "tf/tf-variables"; // Used to declare my own variables and override bootstrap variables.
 @import "tf/tf-buttons";
+// Animate SASS Import
+@import "animate/hover";
 // BOX SHADOW MIXIN
 @mixin box-shadow-std() {
     -webkit-box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.16);
@@ -35,7 +34,13 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background-color: $p1;
+    background: -moz-linear-gradient(9.38% -15% -45deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
+    background: -webkit-gradient(linear, 9.38% -15%, 90.63% 115%, color-stop(0, rgba(40, 54, 74, 1)), color-stop(1, rgba(9, 20, 36, 1)));
+    background: -o-linear-gradient(-45deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
+    background: linear-gradient(135deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
+    ;
 }
 
 .purple-gradient {
@@ -44,9 +49,7 @@ body {
     background: -webkit-gradient(linear, 9.38% -15%, 90.63% 115%, color-stop(0, rgba(40, 54, 74, 1)), color-stop(1, rgba(9, 20, 36, 1)));
     background: -o-linear-gradient(-45deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
     background: -ms-linear-gradient(-45deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#28364A', endColorstr='#091424' ,GradientType=0)";
     background: linear-gradient(135deg, rgba(40, 54, 74, 1) 0%, rgba(9, 20, 36, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#28364A', endColorstr='#091424', GradientType=1);
 }
 
 .logo-container {
@@ -54,26 +57,15 @@ body {
 }
 
 .logo-wrapper {
-    width: 800px;
-    height: 150px;
+    // width: 250px;
+    // height: 200px;
     padding: 30px 0px 10px 0px;
 }
 
-.vert-line {
-    background-color: $b4;
-    min-width: 4px;
-    min-height: 100%;
-}
-
 .profile {
-    padding: 60px 0 40px 0;
-}
-
-.icon-scroll-down {
-    width: 30px;
-    height: 30px;
-    color: $bp4;
-    text-align: center;
+    color: $p3;
+    background-color: $p1;
+    padding: 60px 0 60px 0;
 }
 
 // Base Color BG Addon Classes
@@ -86,11 +78,11 @@ body {
 }
 
 .bg-color-blue-base {
-    background-color: $b4;
+    background-color: $bp4;
 }
 
 .bg-color-blue2-base {
-    background-color: $b4;
+    background-color: $bs4;
 }
 
 .bg-color-green-base {
@@ -100,6 +92,18 @@ body {
 //
 //  Typography
 //
+// Style anchor elements.
+$link-color: $rp4;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 .display-l1 {
     @include display-light(6rem, normal, normal, $p3);
 }
@@ -119,8 +123,11 @@ body {
 }
 
 .display-l5 {
-    @include display-light(2.5rem, normal, normal, $p3);
-    text-align: center;
+    @include display-light(2.5rem, normal, normal, $p7);
+}
+
+.display-l6 {
+    @include display-light(1.6rem, normal, normal, $p7);
 }
 
 .display-b1 {
@@ -139,7 +146,7 @@ body {
 }
 
 .display-b3-5 {
-    @include display-bold(3.5rem, normal, normal, inherit);
+    @include display-bold(3.5rem, normal, normal, $p7);
     font-weight: bold;
 }
 
@@ -149,15 +156,19 @@ body {
 }
 
 p {
-    color: bp0;
+    color: $p5;
     font-family: 'Roboto', sans-serif;
-    font-size: $font-size-base * 1.3;
+    font-size: $font-size-base * 1.4;
     font-weight: 400;
     letter-spacing: 0.03rem;
 }
 
 i {
     font-style: italic;
+}
+
+span.red {
+    color: $rp4;
 }
 
 @include media-breakpoint-up(sm) {
@@ -182,7 +193,7 @@ i {
 p {
     font-family: "Roboto", sans-serif;
     font-size: $font-size-base * 1.25;
-    color: $p3;
+    color: $p5;
 }
 
 .divider-green {
@@ -192,7 +203,7 @@ p {
 }
 
 .divider-red {
-    background-color: $r4;
+    background-color: $rp4;
     min-height: 10px;
     margin-top: -10px;
 }
@@ -209,14 +220,32 @@ p {
     margin-top: -10px;
 }
 
+.title {
+    @include roboto-props($p7, 1.3rem, normal, 400);
+}
+
 .employed {
-    @include roboto-props($r6, 1.3rem, normal, 400);
-    color: $r6;
-    font-size: 1.3rem;
-    font-style: normal;
-    font-weight: 400;
+    @include roboto-props($p7, 1rem, normal, 400);
+    color: $p7;
     letter-spacing: 0.08rem;
-    margin-top: 0.54rem;
+    margin-top: -0.6rem;
+}
+
+//
+// JOB DUTIES
+//
+ul.duties {
+    color: $p5;
+    font-family: "Roboto", sans-serif;
+    font-size: $font-size-base * 1.25;
+    list-style: none;
+    margin-left: -2.4rem;
+    & li {
+        padding-left: 0rem;
+        & i {
+            margin-right: 6px;
+        }
+    }
 }
 
 //
@@ -228,10 +257,18 @@ p {
     padding-top: ($spacer * 1.5);
 }
 
+.mt-1 {
+    margin-top: ($spacer * 1.5);
+}
+
 .mb {
     margin-bottom: ($spacer * 3);
 }
 
 .jb {
+    margin-bottom: ($spacer * 4);
+}
+
+jb {
     margin-bottom: ($spacer * 4);
 }

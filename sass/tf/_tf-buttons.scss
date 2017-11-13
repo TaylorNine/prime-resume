@@ -13,17 +13,14 @@
     -moz-border-radius: 27px;
     -webkit-border-radius: 27px;
     tab-focus: none;
-    &:hover,
-    &:focus {
-        {
-            border-style: Solid;
-            border-color: #CC2453;
-            border-width: 5px;
-            border-radius: 28px;
-            -moz-border-radius: 28px;
-            -webkit-border-radius: 28px;
-            outline: none;
-            tab-focus: none;
-        }
+    &:hover {
+        border-style: Solid;
+        border-color: #CC2453;
+        border-width: 5px;
+        border-radius: 28px;
+        -moz-border-radius: 28px;
+        -webkit-border-radius: 28px;
+        outline: none;
+        tab-focus: none;
     }
 }
